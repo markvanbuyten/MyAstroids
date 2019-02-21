@@ -20,7 +20,7 @@ void MoveComponent::Update(float deltaTime)
 
 	if (!Math::NearZero(mForwardSpeed))
 	{
-		Vector2 position = mOwner->GetPosition;
+		Vector2 position = mOwner->GetPosition();
 		position += mOwner->GetForward() * mForwardSpeed * deltaTime;
 
 		if (position.x < 0.0f) { position.x = 1022.0f; }

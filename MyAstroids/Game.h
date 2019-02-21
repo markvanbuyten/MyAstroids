@@ -23,9 +23,9 @@ public:
 	SDL_Texture* GetTexture(const std::string& fileName);
 
 	//Astroid Game-specific
-	void AddAsteroid(class Astroid* asteroid);
-	void RemoveAsteroid(class Astroid* asteroid);
-	std::vector<class Astroid*>& GetAstroid() { return mAsteroids; }
+	void AddAsteroid(class Asteroid* asteroid);
+	void RemoveAsteroid(class Asteroid* asteroid);
+	std::vector<class Asteroid*>& GetAstroids() { return mAsteroids; }
 
 private:
 	void ProcessInput();
@@ -44,7 +44,7 @@ private:
 	std::vector<class Actor*> mPendingActors;
 
 	//All the sprite components drawn
-	std::vector<class SpriteComponents*> mSprites;
+	std::vector<class SpriteComponent*> mSprites;
 
 	SDL_Window* mWindow;
 	SDL_Renderer* mRenderer;

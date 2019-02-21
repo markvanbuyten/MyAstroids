@@ -159,12 +159,12 @@ SDL_Texture * Game::GetTexture(const std::string & fileName)
 	return texture;
 }
 
-void Game::AddAsteroid(Astroid * asteroid)
+void Game::AddAsteroid(Asteroid * asteroid)
 {
 	mAsteroids.emplace_back(asteroid);
 }
 
-void Game::RemoveAsteroid(Astroid * asteroid)
+void Game::RemoveAsteroid(Asteroid * asteroid)
 {
 	auto iter = std::find(mAsteroids.begin(), mAsteroids.end(), asteroid);
 	if (iter != mAsteroids.end())
